@@ -1,0 +1,235 @@
+2024-04-08 07:34:29 - Starting script execution
+2024-04-08 07:34:29 - Prompting user for backup initiation
+BACKING UP YOUR FILES
+
+Files in your home directory less than 1MB are to be backed up to the /backup dir.
+
+This requires having sudo privileges
+Do you want to proceed (y/n)? Backup starting...
+
+Checking for destination dir...
+
+2024-04-08 07:34:35 - Checking and creating backup directory if it doesn't exist
+/backup does not exist.
+Creating backup directory...
+Directory created successfully
+
+
+2024-04-08 07:34:38 - Changing directory permission and ownership
+Changing backup directory permissions...
+
+Permissions changed successfully
+changing dir ownership
+Note: ONLY USER RESEARCHER HAS READ, WRITE AND EXECUTE PERMISSIONS FOR BACKUP DIR!!!
+
+Initializing backup...
+2024-04-08 07:34:42 - Starting backup process
+checking if passwd is already backed-up
+Zipping passwd to /backup
+  adding: passwd (deflated 64%)
+checking if students is already backed-up
+Zipping students to /backup
+  adding: students (deflated 26%)
+checking if afile3.txt is already backed-up
+Zipping afile3.txt to /backup
+  adding: afile3.txt (stored 0%)
+checking if new.sh is already backed-up
+Zipping new.sh to /backup
+  adding: new.sh (deflated 57%)
+checking if sent is already backed-up
+Zipping sent to /backup
+  adding: sent (deflated 83%)
+checking if afile1.txt is already backed-up
+Zipping afile1.txt to /backup
+  adding: afile1.txt (deflated 65%)
+checking if afile4.txt is already backed-up
+Zipping afile4.txt to /backup
+  adding: afile4.txt (stored 0%)
+checking if students-lastNames is already backed-up
+Zipping students-lastNames to /backup
+  adding: students-lastNames (deflated 5%)
+checking if home_utils is already backed-up
+Zipping home_utils to /backup
+  adding: home_utils (deflated 34%)
+checking if afile2.txt is already backed-up
+Zipping afile2.txt to /backup
+  adding: afile2.txt (deflated 65%)
+checking if afile5.txt is already backed-up
+Zipping afile5.txt to /backup
+  adding: afile5.txt (deflated 65%)
+checking if students-firstNames is already backed-up
+Zipping students-firstNames to /backup
+  adding: students-firstNames (deflated 19%)
+checking if backup_script.sh is already backed-up
+Zipping backup_script.sh to /backup
+  adding: backup_script.sh (deflated 54%)
+
+Backup complete!
+13 total file(s) zipped to /backup
+
+2024-04-08 07:35:51 - Prompting user for cleanup initiation
+CLEANING UP OLD FILES
+
+Files backed-up in /backup dir modified more than 30days ago will be deleted.
+
+Do you want to proceed (y/n)? initiating cleanup...
+
+2024-04-08 07:36:03 - Starting cleanup process
+Searching for files older than 30 days in /backup...
+
+Cleanup completed.
+0 files older than 30 days have been deleted from /backup.
+
+2024-04-08 07:36:05 - Monitoring and reporting system metrics
+
+You are about to view key system info
+checking cpu usage...
+checking cpu usage done
+
+checking memory usage...
+checking memory usage done
+
+checking disk space...
+checking disk space done
+
+checking network stats...
+checking network stats done
+
+CPU Usage	Memory Usage	Unused Disk Space	Packets received / Requests sent
+3%		873MB		11G			3536/2865
+
+
+System metrics saved to sysinfo.txt
+2024-04-08 07:36:20 - Sending email to system administrator
+Copy of sysinfo.txt will now be sent to the system administrator
+Initialiazing mail sending...
+
+Collecting necessary details...
+Please enter email address of system administrator: mail will now be sent to davikky@gmail.com
+Do you want to proceed (y/n)? 
+...sending mail...35% completed...
+
+...sending mail...55% completed...
+
+...sending mail...75% completed...
+...sending mail...99% completed
+mail sent successfully
+2024-04-08 07:36:50 - Script execution completed successfully
+#=========================================================================================================================================#
+
+2024-04-08 07:40:50 - Starting script execution
+2024-04-08 07:40:50 - Prompting user for backup initiation
+BACKING UP YOUR FILES
+
+Files in your home directory less than 1MB are to be backed up to the /backup dir.
+
+This requires having sudo privileges
+Do you want to proceed (y/n)? Backup starting...
+
+Checking for destination dir...
+
+2024-04-08 07:40:55 - Checking and creating backup directory if it doesn't exist
+Backup directory exists
+
+2024-04-08 07:40:55 - Changing directory permission and ownership
+Changing backup directory permissions...
+
+Permissions changed successfully
+changing dir ownership
+Note: ONLY USER RESEARCHER HAS READ, WRITE AND EXECUTE PERMISSIONS FOR BACKUP DIR!!!
+
+Initializing backup...
+2024-04-08 07:41:00 - Starting backup process
+checking if passwd is already backed-up
+Zipping passwd to /backup
+  adding: passwd (deflated 64%)
+checking if students is already backed-up
+Zipping students to /backup
+  adding: students (deflated 26%)
+checking if afile3.txt is already backed-up
+Zipping afile3.txt to /backup
+  adding: afile3.txt (stored 0%)
+checking if new.sh is already backed-up
+Zipping new.sh to /backup
+  adding: new.sh (deflated 57%)
+checking if sent is already backed-up
+Zipping sent to /backup
+  adding: sent (deflated 84%)
+checking if afile1.txt is already backed-up
+Zipping afile1.txt to /backup
+  adding: afile1.txt (deflated 65%)
+checking if afile4.txt is already backed-up
+afile4.txt already backed up
+skipping to next file...
+checking if students-lastNames is already backed-up
+students-lastNames already backed up
+skipping to next file...
+checking if home_utils is already backed-up
+Zipping home_utils to /backup
+  adding: home_utils (deflated 34%)
+checking if afile2.txt is already backed-up
+afile2.txt already backed up
+skipping to next file...
+checking if afile5.txt is already backed-up
+afile5.txt already backed up
+skipping to next file...
+checking if students-firstNames is already backed-up
+students-firstNames already backed up
+skipping to next file...
+checking if backup_script.sh is already backed-up
+backup_script.sh already backed up
+skipping to next file...
+
+Backup complete!
+7 total file(s) zipped to /backup
+
+2024-04-08 07:42:08 - Prompting user for cleanup initiation
+CLEANING UP OLD FILES
+
+Files backed-up in /backup dir modified more than 30days ago will be deleted.
+
+Do you want to proceed (y/n)? initiating cleanup...
+
+2024-04-08 07:42:16 - Starting cleanup process
+Searching for files older than 30 days in /backup...
+
+Cleanup completed.
+0 files older than 30 days have been deleted from /backup.
+
+2024-04-08 07:42:18 - Monitoring and reporting system metrics
+
+You are about to view key system info
+checking cpu usage...
+checking cpu usage done
+
+checking memory usage...
+checking memory usage done
+
+checking disk space...
+checking disk space done
+
+checking network stats...
+checking network stats done
+
+CPU Usage	Memory Usage	Unused Disk Space	Packets received / Requests sent
+1%		890MB		11G			3753/3083
+
+
+System metrics saved to sysinfo.txt
+2024-04-08 07:42:33 - Sending email to system administrator
+Copy of sysinfo.txt will now be sent to the system administrator
+Initialiazing mail sending...
+
+Collecting necessary details...
+Please enter email address of system administrator: mail will now be sent to davikky@gmail.com
+Do you want to proceed (y/n)? 
+...sending mail...35% completed...
+
+...sending mail...55% completed...
+
+...sending mail...75% completed...
+...sending mail...99% completed
+mail sent successfully
+2024-04-08 07:43:16 - Script execution completed successfully
+#=========================================================================================================================================#
+

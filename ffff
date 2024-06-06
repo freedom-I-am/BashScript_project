@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Function to send email alerts
+send_email_alert() {
+    subject="$1"
+    message="$2"
+    echo -e "Subject: $subject\n$message" | sendmail admin@example.com
+}
+
+# Check CPU usage
+cpu_usage=$(top -bn1 | grep "Cpu(s)" | sed "s/., *\([0-9.]\)%* id.*/\1/" | awk '{print 100 - $1}')
+if [ "$cpu_usage" -gt 95 ]; then
+	Echo 
+    send_email_alert "High CPU Usage Alert" "CPU usage has exceeded 95%."
+fi
+
+# Check memory usage
+mem_usage=$(free -m | awk 'NR==2{printf "%.2f", $3*100/$2 }')
+if [ "$mem_usage" -gt 95 ]; then
+    send_email_alert "High Memory Usage Alert" "Memory usage has exceeded 95%."
+fi
+
+# Check disk space usage
+disk_usage=$(df -h | awk '$NF=="/"{print $5}' | sed 's/%//')
+if [ "$disk_usage" -gt 95 ]; then
+    send_email_alert "Low Disk Space Alert" "Disk space is running low. Usage: $disk_usage%"
+fi
+
+
+
+#!/bin/bash
+
+# Run the monitoring script every 5 minutes (300 seconds) using watch
+watch -n 300 ./check_metrics.sh
